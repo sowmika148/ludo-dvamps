@@ -12,10 +12,10 @@ const GameRoute = require(path.resolve('src/handlers/gameRoute.js'));
 
 const app = express();
 
-app.initialize = function(gamesManager,sessionManager,client) {
+app.initialize = function(gamesManager,sessionManager) {
   app.gamesManager = gamesManager;
   app.sessionManager = sessionManager;
-  app.client = client;
+  // app.client = client;
 };
 /*eslint-disable*/
 app.use(express.urlencoded({
