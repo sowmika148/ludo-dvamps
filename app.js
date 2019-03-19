@@ -16,7 +16,7 @@ app.initialize = function(gamesManager,sessionManager) {
   app.gamesManager = gamesManager;
   app.sessionManager = sessionManager;
 };
-/*eslint-disable*/
+
 app.use(express.urlencoded({
   extended: false
 }));
