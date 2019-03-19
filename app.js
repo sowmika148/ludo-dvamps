@@ -20,7 +20,6 @@ app.initialize = function(gamesManager,sessionManager) {
 app.use(express.urlencoded({
   extended: false
 }));
-app.use(cookieParser());
 app.use(lib.trimRequestBody);
 app.use(lib.checkGame);
 app.use(lib.logger);
