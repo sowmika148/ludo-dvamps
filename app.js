@@ -15,7 +15,6 @@ const app = express();
 app.initialize = function(gamesManager,sessionManager) {
   app.gamesManager = gamesManager;
   app.sessionManager = sessionManager;
-  // app.client = client;
 };
 /*eslint-disable*/
 app.use(express.urlencoded({
